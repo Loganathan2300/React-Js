@@ -1,6 +1,8 @@
 import React from "react";
-import Graf1 from "../../Assest/Round1.jpeg";
-import Graf2 from "../../Assest/Round2.jpeg";
+// import Graf1 from "../../Assest/Round1.jpeg";
+// import Graf2 from "../../Assest/Round2.jpeg";
+import round from "../../Assest/p1.png"
+import round1 from "../../Assest/p2.png"
 function Dashboard() {
   return (
     <div>
@@ -11,18 +13,14 @@ function Dashboard() {
               <div className="mb-0">
                 <div className="row bg-white">
                   <div className="col-lg-5 col-sm-12 col-md-12 mb-lg-0 my-lg-3 my-sm-3 mb-0 text-center">
-                    <img src={Graf1} alt="Round1" className="w-75 h- mx-" />
+                    <img src={round} alt="imgpsh_fullsize_anim" className="w-100 h-100 mx-" />
                   </div>
-                  <div className="col-lg-6 col-sm-12 col-md-12 text-center mb-0 my-lg-3 mt-sm-0">
-                    <img
-                      src={Graf2}
-                      alt="Round2"
-                      className="w-75 h- my-2 my-lg-0"
-                    />
+                  <div className="col-lg-6 col-sm-12 col-md-12 text-center mb-0 my-lg-3 mt-sm-0 ">
+                    <img src={round1} alt="imgpsh_fullsize_anim(1)" className="w-100 h-100 my-2 my-lg-0" />
                   </div>
                 </div>
               </div>
-              <div className="">
+              <div className="mt-lg-5">
                 <div className="row text-center">
                   <div className="col-lg-10 col-sm-12 col-md-12  w-100">
                     <div className=" mb-1">

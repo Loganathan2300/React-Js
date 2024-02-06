@@ -28,41 +28,45 @@ function Calculator() {
     return (
   
       <div className='container-fluid'>
-        <h1 className='mx-5'>Calculator Task</h1>
-        <div className='text-center mx-5'>
-        <div className="p">
-          <div>
-            <input type="text"  className="p1 text-end" placeholder="" value={displayValue} readOnly />
+        <div className='row'>
+          <div className='col-sm-12 col-md-12 col-lg-10'>
+            <h1 className='mx-lg-5'>Calculator Task</h1>
+            <div className='text-center mx-lg-5'>
+            <div className="p">
+              <div>
+                <input type="text"  className="p1 text-end" placeholder="" value={displayValue} readOnly />
+              </div>
+              <div>
+                <button className="p2" onClick={() => displayNumber('1')}>1</button>
+                <button className="p2" onClick={() => displayNumber('2')}>2</button>
+                <button className="p2" onClick={() => displayNumber('3')}>3</button>
+                <button className="p2" onClick={() => displayNumber('+')}>+</button>
+              </div>
+              <div>
+                <button className="p2" onClick={() => displayNumber('4')}>4</button>
+                <button className="p2" onClick={() => displayNumber('5')}>5</button>
+                <button className="p2" onClick={() => displayNumber('6')}>6</button>
+                <button className="p2" onClick={() => displayNumber('-')}>-</button>
+              </div>
+              <div>
+                <button className="p2" onClick={() => displayNumber('7')}>7</button>
+                <button className="p2" onClick={() => displayNumber('8')}>8</button>
+                <button className="p2" onClick={() => displayNumber('9')}>9</button>
+                <button className="p2" onClick={() => displayNumber('*')}>×</button>
+              </div>
+              <div>
+                <button className="p2" onClick={() => displayNumber('/')}>÷</button>
+                <button className="p2" onClick={() => displayNumber('0')}>0</button>
+                <button className="p2" onClick={() => displayNumber('.')}>.</button>
+                <button className="p2" onClick={calculateResult}>=</button>
+              </div>
+              <div className="p3">
+                <button className="p4" onClick={clearAll}>CLEAR ALL</button>&nbsp;&nbsp;
+                <button className="p5" onClick={del}>DEL</button>
+              </div>
+            </div>
+            </div>
           </div>
-          <div>
-            <button className="p2" onClick={() => displayNumber('1')}>1</button>
-            <button className="p2" onClick={() => displayNumber('2')}>2</button>
-            <button className="p2" onClick={() => displayNumber('3')}>3</button>
-            <button className="p2" onClick={() => displayNumber('+')}>+</button>
-          </div>
-          <div>
-            <button className="p2" onClick={() => displayNumber('4')}>4</button>
-            <button className="p2" onClick={() => displayNumber('5')}>5</button>
-            <button className="p2" onClick={() => displayNumber('6')}>6</button>
-            <button className="p2" onClick={() => displayNumber('-')}>-</button>
-          </div>
-          <div>
-            <button className="p2" onClick={() => displayNumber('7')}>7</button>
-            <button className="p2" onClick={() => displayNumber('8')}>8</button>
-            <button className="p2" onClick={() => displayNumber('9')}>9</button>
-            <button className="p2" onClick={() => displayNumber('*')}>×</button>
-          </div>
-          <div>
-            <button className="p2" onClick={() => displayNumber('/')}>÷</button>
-            <button className="p2" onClick={() => displayNumber('0')}>0</button>
-            <button className="p2" onClick={() => displayNumber('.')}>.</button>
-            <button className="p2" onClick={calculateResult}>=</button>
-          </div>
-          <div className="p3">
-            <button className="p4" onClick={clearAll}>CLEAR ALL</button>&nbsp;&nbsp;
-            <button className="p5" onClick={del}>DEL</button>
-          </div>
-        </div>
         </div>
       </div>
     );

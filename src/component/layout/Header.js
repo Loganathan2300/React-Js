@@ -1,16 +1,16 @@
 import React from "react";
 //import "../../css/Header.css";
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+// import Container from 'react-bootstrap/Container';
+// import Nav from 'react-bootstrap/Nav';
+// import Navbar from 'react-bootstrap/Navbar';
+// import NavDropdown from 'react-bootstrap/NavDropdown';
 import Logo from "../../Assest/Angadi logo1.png"
-
+import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 
 function Heading() {
   return (
     <div className="header bg-dark ">
-      <nav className="navbar navbar-expand-lg ">
+      <nav className="navbar navbar-expand-lg position-sticky">
         <div className="container-fluid">
           <a className="navbar-brand text-white" href="#"> 
           <img src={Logo} alt="FTS Logo" width="60" height="40"></img>
@@ -55,7 +55,6 @@ function Heading() {
               </li>
               <li className="nav-item">
                 <a className="nav-link text-white" aria-current="page" href="#" > Disabled</a>    
-                {/* disabled aria-disabled="true"        */}
               </li>
             </ul>
             {/* <form className="d-flex" role="search">
@@ -65,9 +64,15 @@ function Heading() {
           </div>
         </div>
       </nav>
-      {/* <Body/> */}
     </div>
-    // <>
+        
+      );
+    }
+
+
+export default Heading;
+
+ // <>
     //   <Navbar expand="lg" className="bg ">
     //   <Container>
     //     <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
@@ -92,8 +97,3 @@ function Heading() {
     //   </Container>
     // </Navbar>
     // </>
-  );
-}
-
-
-export default Heading;

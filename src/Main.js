@@ -1,11 +1,11 @@
 import React from 'react'
-import { BrowserRouter, Route, Routes,Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import App from './App';
 import Calculator from './component/calculator';
 import Dashboard from './component/layout/Dashboard';
 import Forms from './component/layout/Forms';
 import DataList from './component/DataList';
-import Datashow from './component/Datashow';
+import DataSheetList from './component/DataSheetList';
 export default function Main() {
   return (
     <>
@@ -16,7 +16,8 @@ export default function Main() {
          <Route path='/forms' element={<Forms/>}/>
          <Route path='/dashboard' element={<Dashboard/>}/>
          <Route path='/data' element={<DataList/>}/>
-         <Route path='/datashow' element={<Datashow/>}/>
+         <Route path='/datalist/:id' element={<DataList/>}/>
+         <Route path='/datasandy' element={<DataSheetList/>}/>
          </Route>
        </Routes>
        </BrowserRouter>
