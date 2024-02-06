@@ -17,9 +17,9 @@ function App(){
     <div className='overflow-x-hidden'>
       <Container fluid className='p-0'>
       <Heading/>
-       <Row>
+       <Row className='hv-100'>
         <Col xs={2} className='p-0 d-none d-md-block d-lg-block bg-secondary-subtle text-light text-emphasis-primary'><Sidebox/></Col>
-        <Col xs={10} sm={12} md={10} lg={10} className=' mx-4 mx-lg-0 mx-md-0 my-2 my-lg-3'><Outlet/></Col>
+        <Col xs={10} sm={12} md={10} lg={10} className=' mx-4 mx-lg-0 mx-md-0 my-2 my-lg-3'style={{overflow: "auto",height: "88vh"}}><Outlet/></Col>
        </Row>
        {/* <Footer/> */}
       </Container>

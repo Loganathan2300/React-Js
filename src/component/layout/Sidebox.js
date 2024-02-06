@@ -7,7 +7,7 @@ const Sidebox = () => {
 
 
   return (
-    <div className="vh-100">
+    <div className="">
       {/* <!-- Sidebar --> */}
       <nav id="sidebar">
         <ul className="list-unstyled p-3 pe-2 ">
