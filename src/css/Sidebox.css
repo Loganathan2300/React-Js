@@ -28,7 +28,7 @@
     main {
         padding: 10px;
     }
-} */ */
+} */ 
 
 /* .container{ 
     border-color: lightslategrey;
@@ -66,6 +66,19 @@
     }
   } */
   
-  .bg{
+  /* .bg{
     background-color: rgb(121, 117, 117);
+  } */
+  
+  /* .myButton {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
   }
+  
+  .myButton.clicked {
+    background-color: #e74c3c;
+  } */
+  
