@@ -51,14 +51,20 @@ function DataList() {
   };
   // //page navigate end
   return (
-    <div className="mt-">
+    <div className="">
       <div className="col-lg-12 col-sm-12 col-md-12 ">
           <div className="row ">
             <div className="col-lg-12 col-sm-12 col-md-12">
-              <div className="fw-bold px-lg-4 py-lg-5 pb-lg-0 pt-lg-3 fs-5 ">Total Data : {datalength}</div>
-              <div className="text-end my- me-5">
-                <input type="text" placeholder="Search" className="px-lg-4 border-3 fw-bold rounded-1 py-lg-1 text-end col-sm-3" 
-                value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
+              <div className="row">
+                <div className="col-6">
+                      <div className="fw-bold mx-lg-4 fs-5">Total Data : {datalength}</div>
+                </div>
+                <div className="col-6">
+                    <div className="text-end me-5">
+                      <input type="text" placeholder="Search" className="px-lg-4 py-lg-1 border-3 fw-bold rounded-1" 
+                      value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
+                    </div>
+                </div>
               </div>
             </div>
             {/* {<TableData/>} */}

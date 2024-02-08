@@ -5,16 +5,14 @@ const Datashow = ({ seletedRow, handleBackButton }) => {
   const originalDate = seletedRow.date_of_birth
   const finalDate = originalDate.split('T')[0]
   const semiDate = originalDate.split(" ")[1]
-  
-  // console.log(finalDate,semiDate)
- // const finaltime = finalDate.
+
   return (
     <div className="col-sm-12 col-md-12 col-lg-12">
-      <div className=" w-100 px-3 py-3 mt-0">
-        <div className="container py-">
-          <div className="row d-flex justify-content-center align-items-center h-100">
+      <div className=" w-100 px-3 py-3">
+        <div className="container">
+          <div className="row d-flex justify-content-center align-items-center h-100 ">
             <div className="col col-md-9 col-lg-7 col-xl-5 w-75">
-              <div className="card" style={{ borderRadius:'15px', backgroundColor:'#93e2bb' }}>
+              <div className="card" style={{ borderRadius:'15px', backgroundColor:'#93e2bb'}}>
                 <div className="card-body p-4 text-black">
                   <div>
                     <h4>Details Show :</h4>
