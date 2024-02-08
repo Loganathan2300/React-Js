@@ -8,7 +8,6 @@ import Container from 'react-bootstrap/esm/Container';
 import {Col, Row} from "react-bootstrap";
 // import "../src/css/Sidebox.css"
 
-
 function App(){
 
   return(
