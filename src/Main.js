@@ -16,7 +16,7 @@ export default function Main() {
          <Route path='/forms' element={<Forms/>}/>
          <Route path='/dashboard' element={<Dashboard/>}/>
          <Route path='/data' element={<DataList/>}/>
-         <Route path='/datalist/:id' element={<DataList/>}/>
+         <Route path='/data/:id' element={<DataList/>}/>
          <Route path='/datasandy' element={<DataSheetList/>}/>
          </Route>
        </Routes>
