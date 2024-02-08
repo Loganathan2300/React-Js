@@ -20,7 +20,7 @@ function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className="mt-lg-5">
+              <div className="mt-lg-5 me-lg-2">
                 <div className="row text-center">
                   <div className="col-lg-10 col-sm-12 col-md-12 w-100">
                     <div className="mb-1">
