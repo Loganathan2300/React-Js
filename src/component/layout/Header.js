@@ -7,10 +7,13 @@ import React from "react";
 import Logo from "../../Assest/Angadi logo1.png"
 import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
 
+//position-fixed w-100 bg-dark
 function Heading() {
   return (
-    <div className="header bg-dark ">
-      <nav className="navbar navbar-expand-lg position-sticky">
+    <div className="row"> 
+      <div className="col-12">
+      <div className="header bg-dark ">
+      <nav className="navbar navbar-expand-lg position-fixed w-100 bg-dark">
         <div className="container-fluid">
           <a className="navbar-brand text-white" href="#"> 
           <img src={Logo} alt="FTS Logo" width="60" height="40"></img>
@@ -65,6 +68,9 @@ function Heading() {
         </div>
       </nav>
     </div>
+      </div>
+    </div>
+    
         
       );
     }

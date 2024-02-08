@@ -22,17 +22,17 @@ function Dashboard() {
               </div>
               <div className="mt-lg-5">
                 <div className="row text-center">
-                  <div className="col-lg-10 col-sm-12 col-md-12  w-100">
-                    <div className=" mb-1">
-                      <div className="table-responsive mx-lg-">
+                  <div className="col-lg-10 col-sm-12 col-md-12 w-100">
+                    <div className="mb-1">
+                      <div className="table-responsive rounded-3">
                         <table className="table table-bordered">
                           <thead className="table-dark text-center">
                             <tr>
-                              <th scope="col">S.No</th>
-                              <th scope="col">First</th>
-                              <th scope="col">Last</th>
-                              <th scope="col">Email id</th>
-                              <th scope="col">Phone</th>
+                              <th scope="col">S.NO</th>
+                              <th scope="col">FIRST</th>
+                              <th scope="col">LAST</th>
+                              <th scope="col">EMAIL ID</th>
+                              <th scope="col">PHONE</th>
                             </tr>
                           </thead>
                           <tbody>

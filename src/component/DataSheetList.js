@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import { Datasheet } from "../component/Datasheet";
-const itemPage = 2
+const itemPage = 3
 
 export const DataSheetList = () => {
   const [pageChange,setPageChange]=useState(1)
@@ -46,19 +46,19 @@ for (let i = 1; i <= totalPages; i++) {
                     <tr>
                       <th scope="col">S.NO</th>
                       <th scope="col">NAME</th>
-                      <th scope="col">USERNAME</th>
                       <th scope="col">EMAIL</th>
+                      <th scope="col">PHONE</th>
                       <th scope="col">STREET</th>
                       <th scope="col">SUITE</th>
                       <th scope="col">CITY</th>
-                      <th scope="col">ZIPCODE</th>
+                      {/* <th scope="col">ZIPCODE</th>
                       <th scope="col">LATITUDE</th>
                       <th scope="col">ING</th>
                       <th scope="col">PHONE</th>
                       <th scope="col">WEBSITE</th>
                       <th scope="col">COMPANY NAME</th>
                       <th scope="col">CATCHPHRASE</th>
-                      <th scope="col">BS</th>
+                      <th scope="col">BS</th> */}
                     </tr>
                   </thead>
                   <tbody>
@@ -71,14 +71,14 @@ for (let i = 1; i <= totalPages; i++) {
                         <td>{item.address.street}</td>
                         <td>{item.address.suite}</td>
                         <td>{item.address.city}</td>
-                        <td>{item.address.zipcode}</td>
+                        {/* <td>{item.address.zipcode}</td>
                         <td>{item.address.geo.lat}</td>
                         <td>{item.address.geo.lng}</td>
                         <td>{item.phone}</td>
                         <td>{item.website}</td>
                         <td>{item.company.name}</td>
                         <td>{item.company.catchPhrase}</td>
-                        <td>{item.company.bs}</td>
+                        <td>{item.company.bs}</td> */}
                       </tr>
                     ))}
                   </tbody>
@@ -88,7 +88,7 @@ for (let i = 1; i <= totalPages; i++) {
           </div>
         </div>
         <div className="row">
-          <div className="col-lg-12 col-sm-12 col-md-12 ">
+          <div className="col-lg-12 col-sm-12 col-md-12 my-2">
             <nav aria-label="Page navigation example">
               <ul class="pagination justify-content-center">
                 {page.map((pagenumber) => (

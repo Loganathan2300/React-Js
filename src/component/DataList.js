@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { Data } from "../component/Datas";
 import { useNavigate } from "react-router-dom";
 import Datashow from "./Datashow";
+// import TableData from "./TableData";
+//  import { Datashow } from "./Datashow";
 
 const itemperpage = 10;
 function DataList() {
@@ -9,7 +11,7 @@ function DataList() {
   const [searchTerm, setSearchTerm] = useState("");
   //for pagechange code
   const [Currentpage, setCurrentpage] = useState(1);
-  //for use navigate
+  // //for use navigate
   const navigate = useNavigate();
   const [seletedRow,setSelectRow] = useState(null);
   //for searching data show
@@ -17,10 +19,13 @@ function DataList() {
     Object.values(row).some((value) =>
       String(value).toLowerCase().includes(searchTerm.toLowerCase())
     )
+    
   );
   //for pagechange code start
   const datalength = filteredData.length;
   const totalpages = Math.ceil(datalength / itemperpage);
+  //const totalpages = 30;
+  //visuvalPage = 3;
   const displaydata = filteredData.slice((Currentpage - 1) * itemperpage, Currentpage * itemperpage);
   const startingnumer = (Currentpage - 1) * itemperpage + 1;
 
@@ -32,7 +37,7 @@ function DataList() {
   //page navigate start
   const handleshowdata = (id) => {
     setSelectRow(Data.find((row) => row._id === id));
-    navigate(`/datalist/${id}`);
+    navigate(`/data/${id}`);
   };
   //back to navicate 
   const handleBackButton =() =>{
@@ -44,12 +49,9 @@ function DataList() {
       <Datashow seletedRow = {seletedRow} handleBackButton={handleBackButton}/>
     )
   };
-  //page navigate end
-  
-
-
+  // //page navigate end
   return (
-    <div className="">
+    <div className="mt-">
       <div className="col-lg-12 col-sm-12 col-md-12 ">
           <div className="row ">
             <div className="col-lg-12 col-sm-12 col-md-12">
@@ -59,6 +61,7 @@ function DataList() {
                 value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
               </div>
             </div>
+            {/* {<TableData/>} */}
             <div className="row">
               <div className="col-lg-12 col-sm-12 col-md-12 ">
                 <div className="table-responsive mt-4 mx-lg-4 rounded-3">

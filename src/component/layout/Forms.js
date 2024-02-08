@@ -4,7 +4,7 @@ import React, { useState } from "react";
 function Forms() {
   return (
 <>
-<div className="content mx-4 my-lg-3">
+<div className="content mx-4 my-lg-3 h-100">
     <div className="row">
             <div className="col-sm-12 col-lg-8 col-md-12 col-xxl-8 border border-2 border-secoundery rounded-4 bg-white p-2 p-lg-3">
                 <div className="fs-3 fw-medium mt-0 ">
