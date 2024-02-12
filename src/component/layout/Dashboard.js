@@ -11,15 +11,20 @@ function Dashboard() {
           <div className="">
             <div className="col-lg-8 col-md-12 col-sm-12 w-100">
               <div className="mb-0">
-                <div className="row bg-white">
-                  <div className="col-lg-5 col-sm-12 col-md-12 mb-lg-0 my-lg-1 my-sm-3 mb-0 text-center">
-                    <img src={round} alt="imgpsh_fullsize_anim" className="w-100 h-100 mx-" />
+                <div className="row">
+                  <div className="col-lg-5 col-sm-12 col-md-12 w-50 h-50">
+                    <div className="card ">
+                        <img src={round} alt="imgpsh_fullsize_anim" className="m-0" />
+                    </div>
                   </div>
-                  <div className="col-lg-5 col-sm-12 col-md-12 text-center mb-0 my-lg-3 mt-sm-0 py-lg- mx-lg-5">
-                    <img src={round1} alt="imgpsh_fullsize_anim(1)" className="w-100 h-100 my-2 my-lg-0" />
+                  <div className="col-lg-5 col-sm-12 col-md-12 w-50 h-100">
+                    <div className="card">
+                      <img src={round1} alt="imgpsh_fullsize_anim(1)" className="my-3" />     
+                    </div>
                   </div>
                 </div>
               </div>
+              {/* my-2 my-lg-0 */}
               <div className="mt-lg-5 me-lg-2">
                 <div className="row text-center">
                   <div className="col-lg-10 col-sm-12 col-md-12 w-100">

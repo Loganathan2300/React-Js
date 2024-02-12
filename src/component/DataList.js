@@ -25,8 +25,8 @@ const DataList = () => {
   };
   // //page navigate end
   return (
-    <div className="m-lg-5">
-        <div className="card py-lg-5 pb-lg-0 pt-lg-4 py-sm-3">
+    <div className="m-5 mt-0 mx-0">
+        <div className="card position-fixed py-lg-5 pb-lg-0 pt-lg-4 py-sm-3 mt-0 m-3">
           <TableData tableHeader={dataColum} tableDatas={Data} showButton={true} handleShowButton={handleShowButton} button={true} No={true}/>
         </div>
     </div>
