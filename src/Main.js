@@ -6,6 +6,7 @@ import Dashboard from './component/layout/Dashboard';
 import Forms from './component/layout/Forms';
 import DataList from './component/DataList';
 import DataSheetList from './component/DataSheetList';
+import TableData from './component/TableData';
 export default function Main() {
   return (
     <>
@@ -18,6 +19,7 @@ export default function Main() {
          <Route path='/data' element={<DataList/>}/>
          <Route path='/data/:id' element={<DataList/>}/>
          <Route path='/datasandy' element={<DataSheetList/>}/>
+         <Route path='/table' element={<TableData/>}/>
          </Route>
        </Routes>
        </BrowserRouter>

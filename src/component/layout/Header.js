@@ -13,7 +13,7 @@ function Heading() {
     <div className="row"> 
       <div className="col-12">
       <div className="header bg-dark ">
-      <nav className="navbar navbar-expand-lg position-fixed w-100 bg-dark">
+      <nav className="navbar navbar-expand-lg position-fixed w-100 bg-dark z-3">
         <div className="container-fluid">
           <a className="navbar-brand text-white" href="#"> 
           <img src={Logo} alt="FTS Logo" width="60" height="40"></img>

@@ -32,7 +32,7 @@ const Sidebox = () => {
             <span className={`${color ==="data_sandy"?"text-white fs-5":"text-dark fs-5"}`}><Icon icon="icon-park-solid:data-one" className="fs-3"/> Data_sandy <span className="float-end">&#10095;</span></span></Link>
           </li>
           <li className={`${color === "setting"?"text-bg-secondary text-white my-2 m-0 mt-3 rounded-2 p-1":"my-2 m-0 mt-3"}`}>
-          <Link to="/" className=' py-5 pb-0 pt-0 px-4 text-dark text-decoration-none' style={{ cursor: 'pointer' }} onClick={()=>setColor("setting")}>
+          <Link to="/table" className=' py-5 pb-0 pt-0 px-4 text-dark text-decoration-none' style={{ cursor: 'pointer' }} onClick={()=>setColor("setting")}>
             <span className={`${color ==="setting"?"text-white fs-5":"text-dark fs-5"}`}><Icon icon="lets-icons:setting-fill" className="fs-3" /> Settings <span className="float-end">&#10095;</span></span></Link>
           </li>
         </ul>
@@ -40,11 +40,5 @@ const Sidebox = () => {
     </div>
   );
 };
-// const Sidebox =() =>{
-//   return(
-//     <>
-    
-//     </>
-//   )
-// }
+
 export default Sidebox;
